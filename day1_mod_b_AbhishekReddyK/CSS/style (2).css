@@ -1,0 +1,229 @@
+/* ------------------------------------- Global Start ------------------------------------ */
+
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:active
+{
+	color: white;
+}
+
+.menu a
+{
+	color: rgb(240, 14, 72);
+}
+
+.menu a:hover
+{
+	color: skyblue;
+}
+
+/* ------------------------------------- Global End ------------------------------------ */
+
+body
+{
+	background: url('../Images/background.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100%;
+	height: auto;
+	font : 15px/1.5 Arial, Helvetica, sans-serif
+	padding : 0;
+	margin: 0;
+}
+
+/* ------------------------------------- Header Start ------------------------------------ */
+
+header
+{
+	margin: auto;
+	height: auto;
+	position: fixed;
+	width: 100%;
+	background : darkblue;
+	color: white;
+	padding: 30px 0 0 30px;
+	min-height: 50px;
+	border-bottom: tomato 4px solid;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+header .branding
+{
+	float: left;
+}
+
+header .menu
+{
+	font-weight: bold;
+	float: right;
+	padding-top: 50px;
+	padding-right: 30px;
+}
+
+header .current
+{
+	color: white;
+}
+
+
+header .media
+{
+	float: right;
+	padding-right: 100px;
+	padding-top: 45px;
+}
+
+header .search
+{
+	float: left;
+	padding-left: 100px;
+	padding-top: 20px;
+}
+
+.highlight1
+{
+	color: rgb(240, 14, 72);
+	font-weight: bold;
+	font-size: 70px;
+}
+
+.sup
+{
+	font-size: 23px;
+}
+
+#search_button
+{
+	height: 25px;
+	background: rgb(240, 14, 72);
+	padding-right: 20px;
+	padding-left: 20px;
+	color: white;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+header #search_button:hover
+{
+	color: rgb(240, 14, 72);
+	background: white;
+}
+
+input
+{
+	border-radius: 5px;
+}
+
+input:focus
+{
+	background-color: skyblue;
+	color: rgb(550,0,100);
+	font-weight: bold;
+}
+
+/* ------------------------------------- Header End ------------------------------------ */
+
+/* ------------------------------------- Footer Start ------------------------------------ */
+
+footer
+{
+	background-color: tomato;
+	border: darkblue 3px;
+	border-style: solid;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	-webkit-animation : mymove 2s infinite;
+}
+
+@-webkit-keyframes mymove
+{
+	from{background-color: tomato; color: white; border-color: red;}
+	to{background-color: lightgrey; color :black; border-color: darkblue;}
+}
+
+footer li
+{
+	color: darkblue;
+	padding: 5px;
+}
+
+.heading_footer
+{
+	color: black;
+}
+
+.toll_logo
+{
+	align-content: center;
+}
+
+#toll
+{
+	color: rgb(240, 14, 72);
+	font-weight: bold;
+	font-size: 50px;
+}
+
+footer input
+{
+	height: 20px;
+}
+
+#subscribe_button
+{
+	height: 30px;
+	background: darkblue;
+	font-weight: bold;
+	padding-right: 20px;
+	padding-left: 20px;
+	color: white;
+	border-radius: 5px;
+}
+
+footer #subscribe_button:hover
+{
+	color: darkblue;
+	background: white;
+}
+
+#footer_box
+{
+	margin-top: 20px;
+}
+
+#footer_box .box
+{
+	float: left;
+	width: 30%;
+	padding: 10px;
+}
+
+footer a
+{
+	color: darkblue;
+}
+
+footer a:hover
+{
+	color: skyblue;
+}
+
+footer .current
+{
+	color: white;
+}
+
+/* ------------------------------------- Footer End ------------------------------------ */

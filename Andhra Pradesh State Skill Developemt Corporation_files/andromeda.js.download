@@ -1,0 +1,156 @@
+var Andromeda = {
+    showPage: function (path, targetDiv) {
+        var jqxhr = jQuery.post(path, function (data) {
+            jQuery("#" + targetDiv).html(data);
+        });
+    },
+    showAboutPage: function () {
+        var path = "/worldskillsap/html/general/about.html";
+        Andromeda.showPage(path, "apSkillsContainerDiv");
+    },
+    showVideoPage: function() {
+        var path = "/worldskillsap/html/general/video.html";
+        Andromeda.showPage(path, "apSkillsContainerDiv");
+    },
+    showRegisterPage: function() {
+        var path = "/worldskillsap/html/general/register.html";
+        Andromeda.showPage(path, "apSkillsContainerDiv");
+    },
+    showLoginPage: function () {
+        var path = "/worldskillsap/html/login/login.html";
+        Andromeda.showPage(path, "apSkillsContainerDiv");
+        // Andromeda.showPage(path, "dashboardDiv");
+    },
+    showFAQsPage: function () {
+    	var path = "/worldskillsap/html/general/faq.html";
+    	Andromeda.showPage(path, "apSkillsContainerDiv");
+    	// Andromeda.showPage(path, "dashboardDiv");
+    },
+    
+// --------------------------------------------//
+    showSubscribePage : function() {
+		var path = "/worldskillsap/html/general/Subscribe.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	
+	showProgramWiseReport : function() {
+		var path = "/worldskillsap/html/login/ProgramWiseReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	
+	showClusterWiseReport : function() {
+		var path = "/worldskillsap/html/login/ClusterwiseReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	
+	showDistrictWiseReport : function() {
+		var path = "/worldskillsap/html/login/DistrictwiseReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	
+	showConsolidatedReport : function() {
+		var path = "/worldskillsap/html/login/ConsolidatedReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	showConsolidatedReportCluseterwise : function() {
+		var path = "/worldskillsap/html/login/ClustorwiseConsolidatedReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	showConsolidatedReportDistrictwise : function() {
+		var path = "/worldskillsap/html/login/distrcitwiseConsolidatedReport.html";
+		Andromeda.showPage(path, "replaceDiv");
+	},
+	 showDistrictWiseReport: function() {
+	        var path = "/worldskillsap/html/login/DistrictwiseReport.html";
+	        Andromeda.showPage(path, "replaceDiv");
+	 },
+	 showDatewiseConsolidatedReport : function() {
+			var path = "/worldskillsap/html/login/datewiseConsolidatedReport.html";
+			Andromeda.showPage(path, "replaceDiv");
+		},
+	
+
+	
+	showLoginHome : function() {
+		var path = "/worldskillsap/html/login/Home.html";
+		Andromeda.showPage(path, "apSkillsReplaceDiv");
+	},
+	
+	
+//	------------------------------------------------
+    
+    
+    reload: function () {
+        window.location.reload();
+    },
+    setSessionValue: function (key, value) {
+        sessionStorage.setItem(key, value);
+    },
+    getSessionValue: function (key) {
+        return sessionStorage.getItem(key);
+    },
+    removeSessionValue: function (key) {
+        sessionStorage.removeItem(key);
+    },
+    showError: function (errorMessage) {
+        var message = "<div class=\"alert alert-danger\"><div class='text-center' style='font-size: medium;'><strong>Error: </strong>" +
+            errorMessage + "</div></div>";
+        jQuery("#errorDiv").html(message);
+    },
+    logout: function () {
+        alert("you have clicked logout")
+        var username = Andromeda.getSessionValue("username") || "";
+        Andromeda.setSessionValue("context", null);
+        Andromeda.setSessionValue("collegeid", null);
+        var data = {
+            username: username
+        };
+        Andromeda.post('/andromeda/security/logout', data);
+       /* Andromeda.showMainPage();*/
+        Andromeda.reload();
+    },
+    post: function (url, data) {
+        var responseData = null;
+        jQuery.ajax({
+            url: url,
+            type: 'post',
+            data: JSON.stringify(data), // Stringified Json Object
+            dataType: 'json',
+            async: false, // Cross-domain requests and dataType: "jsonp"
+            // requests do not support synchronous operation
+            cache: false, // This will force requested pages not to be cached
+            // by the browser
+            processData: false, // To avoid making query String instead of
+            // JSON
+            contentType: "application/json; charset=utf-8",
+            success: function (data) {
+                responseData = data;
+            }
+        });
+        return responseData;
+    },
+    isUserLoggedIn: function () {
+        var username = Andromeda.getSessionValue("userName") || "";
+        var context = Andromeda.getSessionValue("context") || "";
+        var collegeid = Andromeda.getSessionValue("collegeid") || "";
+        var login = {
+            username: username,
+            context: context,
+            cliendId: collegeid
+        };
+
+         return Andromeda.post('/andromeda/security/loggedin', login) || false;
+    },
+    showModulesPage: function (userName) {
+        var object = {
+            userName: userName
+        };
+        var data = Andromeda.post('/andromeda/modules', object);
+        Andromeda.showModules(data);
+    },
+    loadModule: function (userName, moduleId, moduleUrl) {
+        Andromeda.setSessionValue("userName", userName);
+        Andromeda.setSessionValue("moduleId", moduleId);
+        jQuery("#amdContainerDiv").load(moduleUrl);
+    }
+};

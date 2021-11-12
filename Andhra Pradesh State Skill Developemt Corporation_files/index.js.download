@@ -1,0 +1,12 @@
+
+
+jQuery(document).ready(function () {
+
+	jQuery(document).ready(function() {
+		if (Andromeda.isUserLoggedIn())
+			Andromeda.showLoginHome();
+		else
+			Andromeda.showVideoPage();
+	});
+
+});

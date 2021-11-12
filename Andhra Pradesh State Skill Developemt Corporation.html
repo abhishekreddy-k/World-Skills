@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://engineering.apssdc.in/worldskillsap/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andhra Pradesh State Skill Developemt Corporation</title>
+
+
+    <link rel="stylesheet" href="./Andhra Pradesh State Skill Developemt Corporation_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Andhra Pradesh State Skill Developemt Corporation_files/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./Andhra Pradesh State Skill Developemt Corporation_files/flipclock.css">
+    <link rel="stylesheet" href="./Andhra Pradesh State Skill Developemt Corporation_files/animate.css">
+    <link rel="stylesheet" href="./Andhra Pradesh State Skill Developemt Corporation_files/index.css">
+  <!--   <link rel="stylesheet" href="/worldskillsap/css/general/circlestats.css"> -->
+
+
+    
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/jquery-3.3.1.min.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/loadingoverlay.min.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/bootstrap.min.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/angular.min.js.download"></script>
+
+
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/andromeda.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/flipclock.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/index.js.download"></script>
+    <script src="./Andhra Pradesh State Skill Developemt Corporation_files/FileSaver.js.download"></script>
+    <style>
+      
+
+        /*------------form validation------------------*/
+
+        /*-------------login css start----------------*/
+        .a3-login {
+            margin: 0;
+            padding: 0;
+            /*background-color: #f9f9f9;*/
+            /*font-family: HelveticaNeueBold,Helvetica,Helvetica,Arial,sans-serif;*/
+            /*font-family: arial, sans-serif;*/
+
+        }
+
+        .width-full {
+            width: 100% !important;
+        }
+
+        /* site footer */
+        .site-footer {
+            position: relative;
+            /*padding-top: 40px;*/
+            padding-bottom: 40px;
+            margin-top: 40px;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #767676;
+            border-top: 0 solid #eee;
+            text-align: center;
+        }
+
+        .session-authentication .site-footer {
+            border-top: 0;
+        }
+
+        .site-footer-links {
+            margin: 0;
+            list-style: none;
+
+        }
+
+        .site-footer-links li {
+            display: inline-block;
+            line-height: 16px;
+            padding-right: 10px;
+        }
+
+        .site-footer-links a {
+            color: #9b9b9b;
+        }
+
+        /* -------------------------- */
+
+        a {
+            color: #4078c0;
+            text-decoration: none;
+            background-color: transparent;
+        }
+
+        ul, ol {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* ------------ */
+
+        .auth-form {
+            width: 340px;
+            /*width: 380px;*/
+            margin: 0 auto;
+        }
+
+        .auth-form-header h1 {
+            padding-top: 22px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+
+        .px-3 {
+            padding-right: 16px !important;
+            padding-left: 16px !important;
+        }
+
+        form {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* ------ */
+        .auth-form-body .input-block {
+            /*margin-top: 5px;*/
+            margin-bottom: 15px;
+        }
+
+        .input-block {
+            display: block;
+            width: 100%;
+        }
+
+        .text-block {
+
+        }
+
+        .form-control, .form-select {
+            min-height: 34px;
+            padding: 6px 8px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333;
+            vertical-align: middle;
+            background: #fff no-repeat right 8px center;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            outline: none;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+        }
+
+        .form-control.focus, .form-control:focus, .form-select.focus, .form-select:focus {
+            border-color: #51a7e8;
+            outline: none;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+        }
+
+        input, select, textarea, button {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+        }
+
+        button, input {
+            overflow: visible;
+        }
+
+        .auth-form-body {
+            padding: 20px;
+            font-size: 14px;
+            background-color: #fff;
+            border: 1px solid #d8dee2;
+            border-top: 0;
+            border-radius: 0 0 3px 3px;
+        }
+
+        .auth-form-body {
+            border-top: 1px solid #d8dee2;
+            border-radius: 5px;
+        }
+
+        .mt-3 {
+            margin-top: 16px !important;
+        }
+
+        .session-authentication .auth-form label {
+            display: block;
+            margin-bottom: 7px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        .session-authentication .auth-form-header {
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .session-authentication .auth-form-header h1 {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+
+        .session-authentication .auth-form .btn {
+            margin-top: 20px;
+        }
+
+        a.label-link {
+            float: right;
+            font-size: 14px;
+        }
+
+        .session-authentication .create-account-callout {
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid #d8dee2;
+            border-radius: 5px;
+        }
+
+        p.create-account-callout.mt-3 {
+            padding: 15px 20px;
+            text-align: center;
+            border: 1px solid #d8dee2;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+
+        input.btn.btn-login.btn-block {
+            font-weight: 700;
+            margin-top: 7px;
+            margin-right: 17px;
+            color: #000;
+            text-decoration: none;
+            outline: none;
+            text-shadow: hsla(0, 0%, 100%, .8) 0 1px 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* .session-authentication .auth-form-body {
+            border-top: 1px solid #d8dee2;
+            border-radius: 5px;
+        } */
+        a.label-link {
+            border: 1px solid transparent;
+            /*margin-left: 120px;*/
+            margin-left: 80px;
+        }
+
+        label.auth-form.label {
+            display: block;
+            margin-bottom: 7px;
+            color: #000;
+            text-align: -webkit-left;
+            font-size: inherit;
+        }
+
+        .label-link {
+            float: right;
+            font-size: 12px;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        a.header-logo {
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .img-circle {
+            border-radius: 50%;
+        }
+
+        #loginImg {
+            width: 25%;
+        }
+        /*.ui-datepicker .ui-datepicker-header {
+            position: relative;
+            padding: .2em 0;
+            background: #2d3d4e;
+            color: white;
+        }*/
+        
+        img.img-responsive {
+		    width: 100%;
+		}
+
+    </style>
+
+</head>
+<body id="bodyId">
+<script>
+    $("#bodyId").LoadingOverlay("show");
+</script>
+<!--header-start-->
+<div id="apSkillsReplaceDiv">
+
+<img class="img-responsive" src="./Andhra Pradesh State Skill Developemt Corporation_files/banner.jpg" alt="No image found">
+<nav class="navbar navbar-default" id="navBarId">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          <!--  <a class="navbar-brand" href="#">WebSiteName</a>-->
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="http://engineering.apssdc.in/worldskillsap/#" onclick="window.location.reload()">Home</a></li>
+                <li>
+                    <a href="http://engineering.apssdc.in/worldskillsap/docs/World%20Skills%20NSDC%20Presentation%2030th%20Jan%202018.pptx">Presentation</a>
+                </li>
+                 <li>
+                    <a href="https://goo.gl/ioLVkS" target="_new">Sample Test Projects</a>
+                </li>
+                 <li>
+                    <a href="http://engineering.apssdc.in/worldskillsap/#" onclick="Andromeda.showFAQsPage();">FAQs</a>
+                </li>
+                <li><a href="http://engineering.apssdc.in/worldskillsap/#" onclick="Andromeda.showAboutPage();">About</a></li>
+              
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>-->
+                <li><a href="http://engineering.apssdc.in/worldskillsap/#" onclick="Andromeda.showLoginPage();"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--header-end---->
+
+
+
+<!--content-start-->
+<div id="apSkillsContainerDiv">
+
+<style>
+
+
+    .background_video {
+        margin: 0;
+        padding: 0;
+    }
+
+    video {
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;*/
+        background-size: cover;
+        -webkit-transition: 1s opacity;
+        transition: 1s opacity;
+
+    }
+
+    .stopfade {
+        opacity: .5;
+    }
+
+    #polina {
+        font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+        font-weight: 100;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        padding: 2rem;
+        width: 33%;
+        margin: 2rem;
+        float: right;
+        font-size: 1.2rem;
+    }
+
+    #polina button {
+        display: block;
+        width: 80%;
+        padding: .4rem;
+        border: none;
+        margin: 1rem auto;
+        font-size: 1.3rem;
+        background: rgba(255, 255, 255, 0.23);
+        color: #fff;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: .3s background;
+        transition: .3s background;
+    }
+
+    #polina button:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    @media screen and (max-width: 500px) {
+        /*div{width:70%;}*/
+    }
+
+    @media screen and (max-device-width: 800px) {
+        /*html { background: url(https://thenewcode.com/assets/images/polina.jpg) #000 no-repeat center center fixed; }*/
+        /*#bgvid { display: none; }*/
+    }
+
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    a {
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .middle {
+        display: inline-block;
+        *display: inline; /* IE*/
+        *zoom: 1; /* IE*/
+    }
+
+    .status {
+        /*background-color:white;*/
+        font-family: sans-serif;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+
+        color: #fff;
+        border-radius: 3px;
+        padding: 7px 17px;
+
+        font-weight: 700;
+        line-height: 1;
+        margin-top: 4px;
+        margin-right: 1em;
+        text-transform: uppercase;
+        font-size: 45px;
+        letter-spacing: .02em;
+    }
+
+    span {
+        /*background-color: #e1e4e8;*/
+        padding: 0 5px;
+        border-radius: 3px;
+    }
+
+    /*button elements*/
+
+    a, a:active, a:focus {
+        color: #0052CC;
+        text-decoration: none;
+    }
+
+    .button {
+        border: 1px solid transparent;
+        border-radius: 3px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 1.125;
+        padding: 8px 16px;
+        text-align: center;
+        vertical-align: middle;
+        white-space: nowrap;
+        transition: all 250ms;
+        -webkit-appearance: none;
+    }
+
+    .button.blue-dark-hollow {
+        background-color: transparent;
+        border-color: #0052CC;
+        color: #0052CC;
+    }
+
+    .button.blue-dark-hollow {
+        border-color: #0057D8;
+        color: #0057D8;
+    }
+
+    .blue-dark-hollow:hover {
+        background: #CCE0FF;
+        border-color: #0049B0;
+        color: #0049B0;
+    }
+
+    /*button elements*/
+
+    /*circle div*/
+    .circle {
+        text-align: center;
+        width: 100%;
+        /* position: absolute;*/
+        top: 510px;
+        z-index: 99;
+    }
+
+    .circle li {
+        /* background: rgba(0, 0, 0, 0) url("../images/circle-bg.png") no-repeat scroll 0 0;*/
+        color: #fff;
+        display: inline-block;
+        height: 224px;
+        margin: 0 10px;
+        text-align: center;
+        width: 215px;
+        font-family: "Lato-Bold";
+        vertical-align: top;
+        position: relative
+    }
+
+    .circle h2 {
+        font-size: 83px;
+        line-height: normal;
+        margin-top: 48px;
+        margin-left: 15px;
+    }
+
+    .count-down.plus:after {
+        position: relative;
+        content: "+";
+        font-size: 26px;
+        top: -21px;
+        left: 5px;
+    }
+
+    .count-down.plus.orange:after {
+    }
+
+    .circle p {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+
+    @-webkit-keyframes rotating {
+        from {
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            -ms-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        to {
+            -ms-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    .circle-1 img {
+        -webkit-animation: rotating 16s linear infinite;
+        -moz-animation: rotating 16s linear infinite;
+        -ms-animation: rotating 16s linear infinite;
+        -o-animation: rotating 16s linear infinite;
+        animation: rotating 16s linear infinite;
+    }
+
+    .circle-2 img {
+        -webkit-animation: rotating 8s linear infinite;
+        -moz-animation: rotating 8s linear infinite;
+        -ms-animation: rotating 8s linear infinite;
+        -o-animation: rotating 8s linear infinite;
+        animation: rotating 8s linear infinite;
+    }
+
+    .circle-3 img {
+        -webkit-animation: rotating 12s linear infinite;
+        -moz-animation: rotating 12s linear infinite;
+        -ms-animation: rotating 12s linear infinite;
+        -o-animation: rotating 12s linear infinite;
+        animation: rotating 12s linear infinite;
+    }
+
+    .circle-4 img {
+        -webkit-animation: rotating 6s linear infinite;
+        -moz-animation: rotating 6s linear infinite;
+        -ms-animation: rotating 6s linear infinite;
+        -o-animation: rotating 6s linear infinite;
+        animation: rotating 6s linear infinite;
+    }
+
+    .circle-div {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        top: 0;
+        left: 0;
+    }
+
+    .circle-1 {
+        border: 0 none;
+        height: 166px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 166px;
+        bottom: 0;
+    }
+
+    .circle-2 {
+        bottom: 0;
+        height: 188px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 188px;
+    }
+
+    .circle-3 {
+        bottom: 0;
+        height: 210px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 210px;
+    }
+
+    .circle-4 {
+        bottom: 0;
+        height: 230px;
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 230px;
+    }
+
+    .count-down {
+        color: white;
+        font-family: "Lato";
+        font-weight: bold;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    /*.layer-up {
+        margin-top: 51px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+    }*/
+
+    /*circle div*/
+
+    /*video text*/
+    .vid-text {
+        left: 0;
+        margin: auto;
+        max-width: 1200px;
+        position: absolute;
+        right: 0;
+        top: 225px;
+        z-index: 9;
+        text-align: center
+    }
+
+    .vid-text h1 {
+        color: #fff;
+        line-height: normal;
+        margin-bottom: 10px;
+        font-size: 45px;
+    }
+
+    .vid-text h2 {
+        color: #fff;
+        line-height: normal;
+        font-weight: normal;
+        font-style: italic
+    }
+
+    /*video text*/
+
+    .layer-up {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: -98;
+    }
+
+
+</style>
+
+<div class="background_video">
+	 <div class="text-center">
+	    <h3 class="status ">State Skill Competition - 2018</h3>
+	</div>
+    <div class="text-center">
+        <div class="" style="color: white;">
+
+            <div class="status" style="font-size:35px;">NIPUNYA - Gear Up Yourself </div>
+      
+            <div>
+                <span style="color:white;">*nominations can only be made by Academic Institutions, Corporates and State Govt.</span>
+                <h2 style="color:white;font-size:20px;">LAST DATE FOR REGISTRATION - 10TH APRIL </h2>
+                <a href="http://engineering.apssdc.in/worldskillsap/#" onclick="Andromeda.showRegisterPage();" class="button blue-dark-hollow secondary">Click Here To Register </a>
+            </div>
+            <div class="container" style="margin-top: 2%">
+                <div class="middle" style=" overflow:hidden;">
+                    <!--<div class="clock" style=" overflow:hidden;"></div>-->
+
+                    <script type="text/javascript">
+                        /*  var clock;
+
+                          $(document).ready(function () {
+
+                              // Grab the current date
+                              var currentDate = new Date(2018, 3, 10);
+
+                              // Set some date in the past. In this case, it's always been since Jan 1
+                              var pastDate = new Date(currentDate.getFullYear(), 3, 5);
+
+                              // Calculate the difference in seconds between the future and current date
+                              var diff = currentDate.getTime() / 1000 - pastDate.getTime() / 1000;
+
+
+                              // Instantiate a coutdown FlipClock
+                              clock = $('.clock').FlipClock(diff, {
+                                  clockFace: 'DailyCounter',
+                                  countdown: true,
+                              });
+
+
+                          });*/
+                        var currentDate = new Date();
+                        var futureDate = new Date(2018, 3, 10); // (yyyy,m,d) //
+                        var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+                        var clock = $('.clock').FlipClock(diff, {
+                            clockFace: 'DailyCounter',
+                            countdown: true
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="text-center">
+             <h2>Left</h2>
+         </div>-->
+
+
+    </div>
+
+    <div class="layer-up">
+        <video id="bgvid" width="100%" playsinline="" autoplay="" loop="" muted="">
+            <source src="http://www.worldskillsindia.co.in/images/vide.mp4" type="video/mp4">
+            <!--  <source src="http://202.65.133.69/uploads/apssdcinfo.mp4" type="video/mp4">-->
+            <!--<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">-->
+        </video>
+    </div>
+
+    <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+    </a>-->
+</div>
+<!--
+<div class="container-fluid">
+    <div class="row circleStats">
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem orange">
+                <i class="fa  fa-university"></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="203" class="orangeCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: rgb(250, 88, 51); padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Colleges</div>
+        </div>
+        &lt;!&ndash;/col&ndash;&gt;
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem blue">
+                <i class="fa fa-files-o "></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="67" class="blueCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: rgb(47, 171, 233); padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Total Courses</div>
+        </div>
+        &lt;!&ndash;/col&ndash;&gt;
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem pink">
+                <i class="fa fa-users "></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="6900" class="pinkCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: rgb(228, 43, 117); padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Registered Users</div>
+        </div>
+        &lt;!&ndash;/col&ndash;&gt;
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem green">
+                <i class="fa  fa-graduation-cap"></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="5884" class="greenCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: rgb(185, 230, 114); padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Active Students</div>
+        </div>
+        &lt;!&ndash;/col&ndash;&gt;
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem yellow">
+                <i class="fa  fa-graduation-cap"></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="5884" class="greenCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color:#e8e57a; padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Active Students</div>
+        </div>
+        &lt;!&ndash;/col&ndash;&gt;
+        <div class="col-sm-4 col-md-2 col-xs-12">
+            <div class="circleStatsItem lightorange">
+                <i class="fa  fa-graduation-cap"></i>
+                &lt;!&ndash; <span class="plus">+</span>
+               <span class="percent">%</span> &ndash;&gt;
+                <div style="width: 120px; display: inline;">
+                    <canvas width="120" height="120"></canvas>
+                    <input type="text" value="5884" class="greenCircle" readonly="readonly" style="width: 60px; position: absolute; margin-top: 42.8571px; margin-left: -90px; font-size: 25px; border: none; background: none; font-family: Arial; font-weight: bold; text-align: center; color: rgb(250, 187, 61); padding: 0px; -webkit-appearance: none;">
+                </div>
+            </div>
+            <div class="box-small-title">Active Students</div>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="circle">
+    <ul>
+        <li>
+            <div class="circle-div">
+                <div class="circle-1"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/1-circle.png"></div>
+                <div class="circle-3"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/3-circle.png"></div>
+                <div class="circle-2"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/2-circle.png"></div>
+                <div class="circle-4"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/4-circle.png"></div>
+            </div>
+            <h2 class="count-down">13</h2>
+            <p class="count-down">Districts
+                <br>4 Zones</p>
+        </li>
+        <li>
+            <div class="circle-div">
+                <!-- <div class="circle-1"><img src="images/1-circle.png"></div> -->
+                <div class="circle-2"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/2-circle.png"></div>
+                <div class="circle-3"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/3-circle.png"></div>
+                <div class="circle-4"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/4-circle.png"></div>
+            </div>
+            <h2 class="count-down" style="font-family: &#39;Lato-Bold&#39;;">28</h2>
+            <p class="count-down">Trades</p>
+        </li>
+        <li>
+            <div class="circle-div">
+                <!--  <div class="circle-1"><img src="/worldskillsap/img/1-circle.png"></div>-->
+                <!--  <div class="circle-2"><img src="/worldskillsap/img/2-circle.png"></div>-->
+                <div class="circle-3"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/3-circle.png"></div>
+                <div class="circle-4"><img src="./Andhra Pradesh State Skill Developemt Corporation_files/4-circle.png"></div>
+            </div>
+            <h2 class="count-down  orange">38</h2>
+            <p class="count-down">Lakhs Combined<br> Cash Prizes <br> @ State Level</p>
+        </li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+<!--content-end---->
+
+
+<script>
+    $("#bodyId").LoadingOverlay("hide", true);
+</script>
+
+
+
+</body></html>
